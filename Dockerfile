@@ -13,6 +13,7 @@ RUN apk add --update --no-cache \
     php-dom \
     php-mcrypt \
     php-pdo_mysql \
+    php-ctype \
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer \
     && composer global require hirak/prestissimo
     
